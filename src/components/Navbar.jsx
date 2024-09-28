@@ -15,7 +15,7 @@ const Navbar = () => {
       
       {/* Desktop Menu */}
       <div className='hidden md:flex justify-between items-center space-x-6 text-[25px]'>
-        <a href="" className='text-[#13118F] font-normal'>Lorem Ipsum</a>
+        <a href="/dashboard" className='text-[#13118F] font-normal'>DashBoard</a>
         <a href="" className='text-black font-normal'>Lorem Ipsum</a>
         <a href="" className='text-black font-normal'>Lorem Ipsum</a>
         <a href="" className='text-black font-normal'>Lorem Ipsum</a>
