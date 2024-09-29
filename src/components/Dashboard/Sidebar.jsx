@@ -6,12 +6,12 @@ import { RiAccountCircleFill } from "react-icons/ri";
 import { BsChatLeftTextFill } from "react-icons/bs";
 import { IoMdSettings } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
-
+import { IoIosExit } from "react-icons/io";
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <>
       {isOpen && <div className="fixed inset-0 bg-black opacity-50 " onClick={toggleSidebar}></div>}
-      
+
       <div className={`fixed top-0 left-0 mt-14 bg-white h-full p-6 shadow-lg w-[357px] transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:w-[357px] `}>
         <div className="mb-8 bg-[#FAA057] w-[219px] h-[59px] text-white flex items-center justify-center">
           <p className="text-xl font-semibold">Dietsnap.fit</p>
@@ -67,6 +67,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             Settings
           </Link>
         </div>
+        <Link to='/' className="mb-8 bg-[#FAA057] rounded-md w-[219px] h-[59px] text-white flex items-center justify-center mt-2">
+          <button className='font-medium flex items-center gap-2'>
+            Back to FitSnap Website
+            <IoIosExit className='text-2xl' />
+          </button>
+        </Link>
       </div>
     </>
   );
